@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="font.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<script type="text/javascript" src="custom.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="custom.js"></script>
+</head>
+<body>
+	<div id="banner1">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" href="#"><img src="images/logo4.jpg" style="width: 170px; height: 50px;"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="products.html">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sign In</a>
+					</li>
+
+					<!-- <li class="nav-item">
+						<a class="nav-link" href="checkout.html"><img src="images/shopping-cart.png" style="width: 50px; height: 50px;"> <span id="count" style="color: green;"></span></a>
+					</li> -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sign Up</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+
+			<div class="container">
+				<div class="row justigy-content-center">
+					<div class="col-8 my-5">
+						<h1 class="text-white display-3 text-center " id="headertitle">Our Products</h1>
+						<hr id="divider">
+					</div>
+					<div class="dropdown col-4">
+						<button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown"><img src="images/shopping-cart.png" style="width: 50px; height: 50px;"> <span id="count" style="color: green;"></span>
+							<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">
+									<table border="1" cellpadding="15" cellspacing="0">
+										<thead>
+											<tr>
+												<th>No.</th>
+												<th>Name</th>
+												<!-- <th>Brand</th> -->
+												<th>Price</th>
+												<th>Qty</th>
+												<th>Sub Total</th>
+											</tr>
+										</thead>
+										<tbody id="tbody"></tbody>
+									</table>
+								</a></li><br>
+								<li style="text-align: center;"><a href="checkout.html"><button style="color: green;">Go To Checkout Table</button></a></li>
+							</ul>
+						</div>
+					</div>
+
+			</div>
+
+		</div><br><br>
+	<div class="container-fluid">
+	<!-- <h1>
+		<a href="products.html"><img src="images/logo5.png" style="width: 50px; height: 50px;"><span style="color: blue;">Products</span></a>
+		<a href="checkout.html"><img src="images/shopping-cart.png" style="width: 50px; height: 50px;"><span id="count" style="color: green;"></span></a>
+	</h1> -->
+	
+	<table border="2" cellspacing="30">
+		<tr>
+			<td>
+				<img src="images/cake.png" width="200" height="250">
+				<h4>Price= 30000</h4>
+				<h4>Name= Birthday Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=1 data-name="Birthday Cake" data-price="30000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake10.png" width="215" height="250">
+				<h4>Price= 35000</h4>
+				<h4>Name= Chocolate Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=2 data-name="Chocolate Cake" data-price="35000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake1.jpg" width="215" height="250">
+				<h4>Price= 15000</h4>
+				<h4>Name= Fodant Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=3 data-name="Fodant Cake" data-price="15000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake28.jpg" width="215" height="250">
+				<h4>Price= 10000</h4>
+				<h4>Name= Theme Chake</h4>
+				<button class="addtocart" style="color: green;" data-id=4 data-name="Theme Chake" data-price="10000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake12.png" width="215" height="250">
+				<h4>Price= 10000</h4>
+				<h4>Name= Ragam Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=5 data-name="Ragam Cake" data-price="10000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake13.jpg" width="215" height="250">
+				<h4>Price= 30000</h4>
+				<h4>Name= Treatz Bakery</h4>
+				<button class="addtocart" style="color: green;" data-id=6 data-name="Treatz Bakery" data-price="30000">Addtocart</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="images/cake27.jpg" width="215" height="250">
+				<h4>Price= 10000</h4>
+				<h4>Name=Pune Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=7 data-name="Pune Cake" data-price="10000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake15.jpg" width="215" height="250">
+				<h4>Price= 15000</h4>
+				<h4>Name=  Vanilla Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=8 data-name=" Vanilla Cake" data-price="15000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake8.jpg" width="215" height="250">
+				<h4>Price= 20000</h4>
+				<h4>Name=  Oreo Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=9 data-name=" Oreo Cake" data-price="20000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake32.webp" width="215" height="250">
+				<h4>Price= 12500</h4>
+				<h4>Name= Vegan Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=10 data-name="Vegan Cake" data-price="12500">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake30.jpg" width="215" height="250">
+				<h4>Price= 10000</h4>
+				<h4>Name= Pink Rustic Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=11 data-name="Pink Rustic Cake" data-price="10000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake31.jpg" width="215" height="250">
+				<h4>Price= 35000</h4>
+				<h4>Name= Lana Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=12 data-name="Lana Cake" data-price="35000">Addtocart</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="images/cake7.jpeg" width="215" height="250">
+				<h4>Price= 15000</h4>
+				<h4>Name=Classic Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=7 data-name="Classic Cake" data-price="15000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake6.jpg" width="215" height="250">
+				<h4>Price= 15500</h4>
+				<h4>Name=  Strawberry Tuxedo Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=8 data-name=" Strawberry Tuxedo Cake" data-price="15500">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake5.jpg" width="215" height="250">
+				<h4>Price= 20000</h4>
+				<h4>Name=  Fudgy Chocolate Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=9 data-name=" Fudgy Chocolate Cake" data-price="20000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake4.jpg" width="215" height="250">
+				<h4>Price= 12000</h4>
+				<h4>Name= Suger Spun Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=10 data-name="Suger Spun Cake" data-price="12000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake33.jpg" width="215" height="250">
+				<h4>Price= 10000</h4>
+				<h4>Name= Pot Confetti Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=11 data-name="Pot Confetti Cake" data-price="10000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake26.jfif" width="215" height="250">
+				<h4>Price= 35000</h4>
+				<h4>Name= Tiramisu Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=12 data-name="Tiramisu Cake" data-price="35000">Addtocart</button>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="images/cake24.jfif" width="215" height="250">
+				<h4>Price= 10000</h4>
+				<h4>Name=Heart Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=7 data-name="Heart Cake" data-price="10000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake25.jfif" width="215" height="250">
+				<h4>Price= 7500</h4>
+				<h4>Name=  Pink Flower Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=8 data-name=" Pink Flower Cake" data-price="7500">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake20.jpg" width="215" height="250">
+				<h4>Price= 19000</h4>
+				<h4>Name=  Lemon Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=9 data-name=" Lemon Cake" data-price="19000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake21.jpg" width="215" height="250">
+				<h4>Price= 13000</h4>
+				<h4>Name= Candy Bar Stash Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=10 data-name="Candy Bar Stash Cake" data-price="13000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake40.jpg" width="215" height="250">
+				<h4>Price= 10000</h4>
+				<h4>Name= Easy Galaxy Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=11 data-name="Easy Galaxy Cake" data-price="10000">Addtocart</button>
+			</td>
+			<td>
+				<img src="images/cake17.jpg" width="215" height="250">
+				<h4>Price= 30000</h4>
+				<h4>Name=Florless Cake</h4>
+				<button class="addtocart" style="color: green;" data-id=12 data-name="Florless Cake" data-price="30000">Addtocart</button>
+			</td>
+		</tr>
+		
+	</table>
+	</div>
+	<div class="col-lg-12 col-md-12 col-sm-12 order-lg-10 order-md-10 order-sm-10 my-3">
+		<nav aria-label="Page navigation example">
+			<ul class="pagination justify-content-center">
+				<li class="page-item disabled">
+					<a class="page-link" href="#" tabindex="-1" aria-disabled="true"> << </a>
+				</li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item">
+					<a class="page-link" href="#"> >> </a>
+				</li>
+			</ul>
+		</nav>
+	</div><br><br>
+	<div class="container-fluid">
+		<div class="row bg-info ">
+			<div class="col-lg-3 col-md-3 col-sm-3 order-lg-1 order-md-1 order-sm-1 my-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 order-lg-2 order-md-2 order-sm-2 my-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 order-lg-3 order-md-3 order-sm-3 my-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 order-lg-4 order-md-4 order-sm-4 my-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 order-lg-5 order-md-5 order-sm-5 my-3">
+				<p align="center">All Right Reversed By<a href="http.//heinminhtet.com" target="blank">Hein Min Htet</a>
+				</div>
+
+			</div>
+		</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			count();
+			$(".addtocart").click(function(){
+				//alert("hello");
+				var id=$(this).data('id');
+				var name=$(this).data('name');
+				var price=$(this).data('price');
+				// var brand=$(this).data('brand');
+
+				var item={id:id,name:name,price:price,qty:1};
+				//console.log(item);
+				var cake_str=localStorage.getItem("cake-shop");
+				//console.log(watch_str);
+				var cake_arr;
+				if (cake_str==null) {
+					cake_arr=Array();
+				}else {
+					var cake_arr=JSON.parse(cake_str);
+				}
+				var status=false;
+				$.each(cake_arr,function(i,v){
+					if(id==v.id){
+						status=true;
+						v.qty++;
+					}
+				});
+				if(status==false){
+					cake_arr.push(item);
+				}
+				var cakeData=JSON.stringify(cake_arr);
+				localStorage.setItem("cake-shop",cakeData);
+				count();
+
+			})
+		})
+	</script>
+<script type="text/javascript">
+			$(document).ready(function(){
+				count();
+				getData();
+				function getData(){
+					var cake_str=localStorage.getItem("cake-shop");
+
+					if (cake_str) {
+						var cake_arr=JSON.parse(cake_str);
+						var html='';
+						var j=1;
+						var total=0;
+						$.each(cake_arr,function(i,v){
+							var qty=v.qty;
+							var price=v.price;
+							var sub_total=qty*price;
+							total +=sub_total;
+							//console.log(total);
+							html+=`<tr>
+							<td>${j++}</td>
+							<td>${v.name}</td>
+							
+							<td>${v.price}</td>
+							<td><button class="min" data-item_i="${i}">-</button>${v.qty}<button class="max"  data-item_i="${i}">+</button></td>
+							<td>${sub_total}</td>
+							</tr>`;
+						})
+						html +=`<tr>
+						<td colspan="4" align="center">Total</td>
+						<td>${total} </td>
+						</tr>`
+						$("#tbody").html(html);
+					}else {
+						html='';
+						$("#tbody").html(html);
+
+					}
+				}
+				$("#tbody").on('click','.min', function(){
+				//alert("hello")
+				var item_i=$(this).data("item_i");
+				var cake_str=localStorage.getItem("cake-shop");
+				if (cake_str) {
+					var cake_arr=JSON.parse(cake_str);
+
+					$.each(cake_arr,function(i,v){
+						if (item_i==i) {
+							v.qty--;
+							if (v.qty==0) {
+								cake_arr.splice(item_i,1)
+							}
+						}
+						var cakeData=JSON.stringify(cake_arr);
+						localStorage.setItem("cake-shop", cakeData);
+						getData();
+					})
+				}
+			})
+			$("#tbody").on('click','.max',function(){
+				//alert("Hello jq")
+				var item_i=$(this).data("item_i");
+				//alert(item_i);
+				var cake_str=localStorage.getItem("cake-shop");
+				if (cake_str) {
+					var watch_arr=JSON.parse(cake_str);
+
+					$.each(cake_arr,function(i,v){
+						if (item_i==i) {
+							v.qty++;
+						}
+						var cakeData=JSON.stringify(cake_arr);
+						localStorage.setItem("cake-shop", cakeData);
+						getData();
+					})
+				}
+			})
+			$("#order").click(function(){
+				localStorage.clear();
+				getData();
+				count();
+			})
+		})
+		</script>
+		<!-- <script>
+				$(document).ready(function(){
+					$("#myInput").on("keyup", function() {
+						var value = $(this).val().toLowerCase();
+						$(".dropdown-menu li").filter(function() {
+							$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+						});
+					});
+				});
+			</script> -->
+</body>
+</html>
